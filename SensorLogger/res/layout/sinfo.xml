@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_horizontal">
+
+<TextView android:text="Select a Sensor" style="@style/grhead" />
+<Spinner android:id="@+id/spinner" android:layout_width="match_parent" android:layout_height="wrap_content"></Spinner>
+
+<TextView android:text="Sensor Information" style="@style/grhead" />
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+	<TableRow>
+        <TextView android:text="Name"/>
+		<TextView android:text=":" android:padding="5dip"/>
+        <TextView android:id="@+id/siname"/>
+	</TableRow>
+	<TableRow>
+        <TextView android:text="Max. Range"/>
+		<TextView android:text=":" android:padding="5dip"/>
+        <TextView android:id="@+id/simaxrange"/>
+	</TableRow>
+	<TableRow>
+        <TextView android:text="Min. Delay"/>
+		<TextView android:text=":" android:padding="5dip"/>
+        <TextView android:id="@+id/simindelay"/>
+	</TableRow>
+	<TableRow>
+        <TextView android:text="Power"/>
+		<TextView android:text=":" android:padding="5dip"/>
+        <TextView android:id="@+id/sipower"/>
+	</TableRow>
+	<TableRow>
+        <TextView android:text="Resolution"/>
+		<TextView android:text=":" android:padding="5dip"/>
+        <TextView android:id="@+id/siresolution"/>
+	</TableRow>
+ 	<TableRow>
+       <TextView android:text="Type"/>
+		<TextView android:text=":" android:padding="5dip"/>
+        <TextView android:id="@+id/sitype"/>
+	</TableRow>
+ 	<TableRow>
+       <TextView android:text="Vendor"/>
+		<TextView android:text=":" android:padding="5dip"/>
+        <TextView android:id="@+id/sivendor"/>
+	</TableRow>
+	<TableRow>
+        <TextView android:text="Version"/>
+		<TextView android:text=":" android:padding="5dip"/>
+        <TextView android:id="@+id/siversion"/>
+    </TableRow>
+</TableLayout>
+
+</LinearLayout>

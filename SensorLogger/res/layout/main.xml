@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView 	style="@style/grhead"
+			android:text="Output Screen">
+</TextView>
+<TextView 	android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="\n\n\n\n"
+			android:maxLines="4"
+			android:scrollbars="vertical"
+			android:id="@+id/dbgvw">
+</TextView>
+
+<TextView 	style="@style/grhead"
+			android:text="Start/Stop Sensors">
+</TextView>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+<Button android:text="Start" android:id="@+id/btnstr" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+<Button android:text="Ext. Event" android:id="@+id/btnev" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+<Button android:text="Stop" android:id="@+id/btnstp" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+</LinearLayout>
+
+<TextView	style="@style/grhead" 	
+			android:text="Toggle Modes On/Off">
+</TextView>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+<ToggleButton android:textOn="Monitor On" android:textOff="Monitor Off" android:layout_height="wrap_content" android:id="@+id/tgbtnmon" android:layout_width="wrap_content"></ToggleButton>
+<ToggleButton android:textOn="Logger On" android:textOff="Logger Off" android:layout_height="wrap_content" android:id="@+id/tgbtnlog" android:layout_width="wrap_content"></ToggleButton>
+</LinearLayout>
+
+<TextView	style="@style/grhead" 	
+			android:text="Monitor Screen">
+</TextView>
+
+<ScrollView android:id="@+id/vwmon" android:layout_height="match_parent" android:layout_width="match_parent">
+<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center_horizontal">
+<TextView 	android:id="@+id/mh1" style="@style/monhead"	></TextView>
+<TextView 	android:id="@+id/md1" style="@style/mondata"	></TextView>
+
+<TextView 	android:id="@+id/mh2" style="@style/monhead"	></TextView>
+<TextView 	android:id="@+id/md2" style="@style/mondata"	></TextView>
+
+<TextView 	android:id="@+id/mh3" style="@style/monhead"	></TextView>
+<TextView 	android:id="@+id/md3" style="@style/mondata"	></TextView>
+
+<TextView 	android:id="@+id/mh4" style="@style/monhead"	></TextView>
+<TextView 	android:id="@+id/md4" style="@style/mondata"	></TextView>
+
+<TextView 	android:id="@+id/mh5" style="@style/monhead"	></TextView>
+<TextView 	android:id="@+id/md5" style="@style/mondata"	></TextView>
+
+<TextView 	android:id="@+id/mh6" style="@style/monhead"	></TextView>
+<TextView 	android:id="@+id/md6" style="@style/mondata"	></TextView>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

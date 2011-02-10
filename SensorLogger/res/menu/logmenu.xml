@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/mninfo" android:title="Sensor Info"></item>
+<item android:id="@+id/mnsel" android:title="Select Sensor"></item>
+</menu>
